@@ -5,11 +5,21 @@
       <form>
           <div class="row">
             <div class="input__element__container">
-              <input class="u-full-width" type="email" placeholder="Email" id="login_email">
-              <input class="u-full-width" type="password" placeholder="Password" id="login_password">
+              <input 
+                class="u-full-width" 
+                type="email" 
+                placeholder="Email" 
+                id="login_email"
+              />
+              <input 
+                class="u-full-width" 
+                type="password" 
+                placeholder="Password" 
+                id="login_password"
+              />
             </div>
           </div>
-          <button>Submit</button>
+          <button class="auth__btns">Submit</button>
         </form>
       <hr class="auth_page_hr"/>
       <p>Don't have an account? <a href='' @click.prevent="toggle">Register</a></p>
@@ -20,18 +30,52 @@
       <form>
           <div class="row">
             <div class="input__element__container">
-              <input class="u-full-width" type="email" placeholder="Email" id="register_email">
-              <input class="u-full-width" type="password" placeholder="Password" id="register_password">
-              <input class="u-full-width" type="password" placeholder="Password" id="register_password_confirmation">
+              <input 
+                class="u-full-width" 
+                type="text" 
+                placeholder="Name" 
+                id="name"
+              />
+              <input 
+                class="u-full-width" 
+                type="text" 
+                placeholder="Telephone" 
+                id="telephone"
+              />
+              <input 
+                class="u-full-width" 
+                type="email" 
+                placeholder="Email" 
+                id="register_email"
+              />
+              <input 
+                class="u-full-width" 
+                type="password" 
+                placeholder="Password" 
+                id="register_password"
+              />
+              <input 
+                class="u-full-width" 
+                type="password" 
+                placeholder="Confirm Password" 
+                id="register_password_confirmation"
+              />
             </div>
           </div>
-          <button>Submit</button>
+          <button class="auth__btns">Submit</button>
         </form>
       <hr class="auth_page_hr"/>
       <p>Already have an account? <a href="" @click.prevent="toggle">Login</a></p>
     </header>
   </div>
 </template>
+
+<style>
+.login__text {
+  margin-top: 100px !important;
+}
+</style>
+
 
 <script>
 export default {

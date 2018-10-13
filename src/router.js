@@ -2,6 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Authenticate from './views/Authenticate.vue'
+import ManagerApplication from './views/ManagerApplication.vue'
+
 
 
 Vue.use(Router)
@@ -21,12 +23,12 @@ export default new Router({
       component: Authenticate
     },
     {
-      path: '/about',
-      name: 'about',
+      path: '/manager',
+      name: 'manager',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+      component: ManagerApplication
     }
   ]
 })

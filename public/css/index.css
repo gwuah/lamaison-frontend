@@ -101,6 +101,57 @@ border: 1px solid red;
   border-color: #E1E1E1;
 }
 
+.navbar, .navbar-spacer {
+  display: block;
+  width: 100%;
+  height: 6.5rem;
+  z-index: 99;
+  background: rgb(255, 255, 255);
+  border-top: 1px solid rgb(238, 238, 238);
+  border-bottom: 1px solid rgb(238, 238, 238);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  line-height: 6.5rem;
+}
+
+  .navbar-list {
+    margin: 0 auto;
+    margin-bottom: 0px;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .container {
+    text-align: center;
+
+  }
+
+  .navbar-item {
+    float: left;
+    list-style-type: none;
+    margin: 0 20px;
+  }
+
+  .navbar-item a {
+    padding: 25px;
+    color: black !important;
+    font-weight: bold
+  }
+
+  .navbar-item a:hover {
+    color: white !important;
+  }
+  
+  .popover {
+    display: none;
+  }
+
+  .navbar-item:hover {
+    background-color: black;
+  }
+  
+  
 
 
 
