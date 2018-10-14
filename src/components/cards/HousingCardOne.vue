@@ -1,27 +1,18 @@
 <template>
-  <div class="example-1 card">
-    <div class="wrapper">
-      <div class="date">
-        <span class="day">12</span>
-        <span class="month">Aug</span>
-        <span class="year">2016</span>
+  <article class="card mb-4">
+    <header class="card-header">
+      <div class="card-meta">
+        <a href="#"><time class="timeago" datetime="2017-10-26 20:00">26 october 2017</time></a> in <a href="page-category.html">Journey</a>
       </div>
-      <div class="data">
-        <div class="content">
-          <span class="author">Jane Doe</span>
-          <h1 class="title"><a href="#">Boxing icon has the will for a couple more fights</a></h1>
-          <p class="text">The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.</p>
-          <label for="show-menu" class="menu-button"><span></span></label>
-        </div>
-        <input type="checkbox" id="show-menu" />
-        <ul class="menu-content">
-          <li>
-            <a href="#" class="fa fa-bookmark-o"></a>
-          </li>
-          <li><a href="#" class="fa fa-heart-o"><span>47</span></a></li>
-          <li><a href="#" class="fa fa-comment-o"><span>8</span></a></li>
-        </ul>
-      </div>
+      <a href="post-image.html">
+        <h4 class="card-title">How can we sing about love?</h4>
+      </a>
+    </header>
+    <a href="post-image.html">
+      <img class="card-img" src="https://milo.bootlab.io/img/22.jpg" alt="" />
+    </a>
+    <div class="card-body">
+      <p class="card-text">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. </p>
     </div>
-  </div>
+  </article>
 </template>

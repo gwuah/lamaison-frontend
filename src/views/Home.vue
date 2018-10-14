@@ -1,25 +1,14 @@
 <template>
   <div class="container">
     <header class="row">
-      <router-link class="button auth__btns" to="/authenticate?q=login">Login</router-link>
-      <router-link class="button auth__btns" to="/authenticate?q=register">Register</router-link> 
-    
+      <div class="onboard__btns">
+        <router-link class="button auth__btns" to="/authenticate?q=login">Login</router-link>
+        <router-link class="button auth__btns" to="/authenticate?q=register">Register</router-link> 
+      </div>
+      
       <h1 class="name">{{appName}}</h1>
       <h3 class="tagline">{{tagline}}</h3>
       <hr class="index_hr"/>
-
-      <!-- <div class="row">
-        <div class="two columns hide">
-          ffffffffffffffff
-        </div>
-        <div class="eight columns" style="text-align:center">
-          <gmap-autocomplete placeholder="enter your location here ..." class="two-thirds-width" id="search__input" @place_changed="setPlace"/>
-          <a class="button button-primary" href="#">Anchor button</a>
-        </div>
-        <div class="two columns hide">
-          ffffffffffffffff
-        </div>
-      </div> -->
 
       <div class="row">
         <div class="two columns hide">
@@ -43,15 +32,10 @@
       
     </header>
 
-    <div class="row">
-      <housing-card-two/>
-      <housing-card-two/>
-      <housing-card-two/>
-    </div>
-    <div class="row">
-      <housing-card-two/>
-      <housing-card-two/>
-      <housing-card-two/>
+    <div class="row" id="listing__container">
+      <housing-card-one/>
+      <housing-card-one/>
+      <housing-card-one/>
     </div>
   </div>
 </template>
@@ -59,6 +43,14 @@
 <style scoped>
   .hide {
     opacity: 0;
+  }
+
+  .onboard__btns {
+    margin-top: 50px;
+  }
+
+  #listing__container {
+    margin-top: 40px;
   }
 </style>
 
